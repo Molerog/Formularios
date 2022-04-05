@@ -10,25 +10,45 @@
 <h2><b>El club viejuner</b></h2>    
 
 <form>
+<fieldset>
+  <legend>Datos personales</legend>
   <label for="fname">Nombre:</label><br>
   <input type="text" name="fname" value="" placeholder="Introduzca su nombre" autofocus><br>
   <label for="fsurname">Apellido:</label><br>
   <input type="text" name="fsurname" value="" placeholder="Introduzca su apellido"><br>
   <label for="age">Edad:</label><br>
   <input type="numbers" name="age" pattern= "[0-9]" title="no escriba letras" maxlength="3" value="" placeholder="Introduzca su edad"><br><br>
-  <label for="sex">Género:</label><br>
+  <input type="reset"><br><br>
+</fieldset>
+
+</form>
+
+<form>
+  <fieldset>
+  <Legend>Género</Legend>
+  <label for="sex"></label><br>
   <input type="radio" name="sex" value="Hombre">Hombre<br>
   <label for="sex"></label>
   <input type="radio" name="sex" value="Mujer">Mujer<br><br>
-  <input type="checkbox" name="viejuner" value="me siento viejuner">
-  <label for="viejuner">Me siento viejuner</label><br><br>Tus circunstancias:<br>
-  <textarea name="comment" placeholder="Escribe algo sobre ti" cols="60" rows="10"></textarea><br><br>
+  </fieldset>
+
+  <fieldset>
+  <Legend>Datos adicionales</Legend>
+  <label for="viejuner">¿Te sientes viejuner?:</label><br><br>
+  <input type="checkbox" name="viejuner" value="Sí">No puedo vivir sin quejarme
+  <label for="viejuner"></label>
+  <br><br>Tus circunstancias:<br>
+  <textarea name="comment" placeholder="Cuéntanos más" cols="60" rows="10"></textarea><br><br>
+</fieldset>
+<fieldset>
+  <legend>Datos de contacto</legend>
   <label for="correo">Correo electrónico</label><br>
   <input type="email" name="correo" value="" placeholder="Introduzca su correo"><br>
   <label for="teléfono">Teléfono</label><br>
   <input type="tel" name="teléfono" value="" placeholder="Introduzca su teléfono"><br><br>
   <label for="submit"></label>
-  <input type="submit"> <br><br><br><br>
+  <input type="submit" num="submit" value="Enviar"> <br><br><br><br>
+</fieldset>
 </form>
   <hr width="50%"> <br><br><br><br>
 <h2><b>Los ladronzuelos de bicicletas</b></h2>
@@ -38,7 +58,7 @@
     <label for="dia">Día:</label><br>
     <input type="date" name="dia" value="" min="1910-01-01" max="2022-03-31"><br>
     <label for="hora">Hora:</label><br>
-    <input type="time" name="hora" value=""><br>
+    <input type="time" name="hora" value="12:45"> <br>
     <label for="age">Edad:</label><br>
     <input type="numbers" name="age" pattern= "[0-9]" title="no escriba letras" maxlength="3" value="" placeholder="Introduzca su edad"><br><br>
     <label for="color">Color de la bicicleta:</label>
@@ -65,7 +85,7 @@
       <label for="Accesorios">Accesorios</label>
       <select id="Accesorios" name="Accesorios">
           <option value="Ruedines">Ruedines</option>
-          <option value="Pegatinas">Pegatinas</option>
+          <option value="Pegatinas"><div tabindex="1">Pegatinas</div></option>
           <option value="Cestita">Cestita</option>
           <option value="Bomba de aire">Bomba de aire</option>
           <option value="Timbre">Timbre</option>
@@ -97,7 +117,8 @@
          <option value="cervélo">cervélo</option>
          <option value="argon">argon</option>
          <option value="Safari"></option>
-       </datalist>
+       </datalist><br><br><br>
+       <input type="submit" num="submit" value="Enviar">
     
 
 </form>
