@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios</title>
+</head>
+<body>
+<h1><b>El club viejuner</b></h1>    
+
+<form>
+  <label for="fname">Nombre:</label><br>
+  <input type="text" name="fname" value="" placeholder="Introduzca su nombre"><br>
+  <label for="fsurname">Apellido:</label><br>
+  <input type="text" name="fsurname" value="" placeholder="Introduzca su apellido"><br>
+  <label for="age">Edad:</label><br>
+  <input type="numbers" name="age" pattern= "[0-9]" title="no escriba letras" maxlength="3" value="" placeholder="Introduzca su edad"><br><br>
+  <label for="sex">Género:</label><br>
+  <input type="radio" name="sex" value="Hombre">Hombre<br>
+  <label for="sex"></label>
+  <input type="radio" name="sex" value="Mujer">Mujer<br><br>
+  <input type="checkbox" name="viejuner" value="me siento viejuner">
+  <label for="viejuner">Me siento viejuner</label><br><br>Tus circunstancias:<br>
+  <textarea name="comment" placeholder="Escribe algo sobre ti" cols="60" rows="10"></textarea><br><br>
+  <label for="correo">Correo electrónico</label><br>
+  <input type="email" name="correo" value="" placeholder="Introduzca su correo"><br>
+  <label for="teléfono">Teléfono</label><br>
+  <input type="tel" name="teléfono" value="" placeholder="Introduzca su teléfono"><br><br>
+  <label for="submit"></label>
+  <input type="submit">
+  
+  
+  
+</form>
+</body>
+</html>
