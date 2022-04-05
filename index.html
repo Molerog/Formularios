@@ -7,11 +7,11 @@
     <title>Formularios</title>
 </head>
 <body>
-<h1><b>El club viejuner</b></h1>    
+<h2><b>El club viejuner</b></h2>    
 
 <form>
   <label for="fname">Nombre:</label><br>
-  <input type="text" name="fname" value="" placeholder="Introduzca su nombre"><br>
+  <input type="text" name="fname" value="" placeholder="Introduzca su nombre" autofocus><br>
   <label for="fsurname">Apellido:</label><br>
   <input type="text" name="fsurname" value="" placeholder="Introduzca su apellido"><br>
   <label for="age">Edad:</label><br>
@@ -28,10 +28,98 @@
   <label for="teléfono">Teléfono</label><br>
   <input type="tel" name="teléfono" value="" placeholder="Introduzca su teléfono"><br><br>
   <label for="submit"></label>
-  <input type="submit">
-  
-  
-  
+  <input type="submit"> <br><br><br><br>
 </form>
+  <hr width="50%"> <br><br><br><br>
+<h2><b>Los ladronzuelos de bicicletas</b></h2>
+
+
+<form>
+    <label for="dia">Día:</label><br>
+    <input type="date" name="dia" value="" min="1910-01-01" max="2022-03-31"><br>
+    <label for="hora">Hora:</label><br>
+    <input type="time" name="hora" value=""><br>
+    <label for="age">Edad:</label><br>
+    <input type="numbers" name="age" pattern= "[0-9]" title="no escriba letras" maxlength="3" value="" placeholder="Introduzca su edad"><br><br>
+    <label for="color">Color de la bicicleta:</label>
+    <input type="color" name="color" value=""> <br><br>
+    
+    <label for="bicicleta">Tipo de bicicleta</label>
+    <select id="bicicleta" name="bicicleta">
+      <optgroup label = "Paseo">
+          <option value = "Señorial">Señorial</option> 
+          <option value = "Anti-plebeyos">Anti-plebeyos</option>
+          <option value = "PorEncimaDelHombro">PorEncimaDelHombro</option>
+      </optgroup>
+      <optgroup label = "Carreras">
+        <option value = "Metroymedio">Metroymedio</option> 
+        <option value = "Fluorescente edition">Fluorescente edition</option>
+        <option value = "Grupitors">Grupitors</option>
+      </optgroup>
+      <optgroup label = "Montaña">
+        <option value = "Gamusinos">Gamusinos</option> 
+        <option value = "Hueleflores premium">Hueleflores premium</option>
+        <option value = "Fango lover">Fango lover</option>
+      </optgroup>
+    </select><br>
+      <label for="Accesorios">Accesorios</label>
+      <select id="Accesorios" name="Accesorios">
+          <option value="Ruedines">Ruedines</option>
+          <option value="Pegatinas">Pegatinas</option>
+          <option value="Cestita">Cestita</option>
+          <option value="Bomba de aire">Bomba de aire</option>
+          <option value="Timbre">Timbre</option>
+          <option value="Foco">Foco</option>
+      </select><br>
+
+      <label for="marca">¿Qué marca era?</label>
+      <input list="marca" name="marcas" id="marcas">
+
+       <datalist id="marca"></option>
+         <option value="specialized">specialized</option>
+         <option value="trek">trek</option>
+         <option value="merida">merida</option>
+         <option value="scott">scott</option>
+         <option value="giant">giant</option>
+         <option value="lapierre">lapierre</option>
+         <option value="orbea">orbea</option>  
+         <option value="cannondale">cannondale</option>    
+         <option value="bmc">bmc</option> 
+         <option value="canyon">canyon</option> 
+         <option value="look">look</option>
+         <option value="protek">protek</option>
+         <option value="megamo">megamo</option>
+         <option value="pinarello">pinarello</option>
+         <option value="bianchi">bianchi</option>
+         <option value="bh">bh</option>
+         <option value="factor">factor</option>
+         <option value="ghost">ghost</option>
+         <option value="cervélo">cervélo</option>
+         <option value="argon">argon</option>
+         <option value="Safari"></option>
+       </datalist>
+    
+
+</form>
+
+
+<!-- Preguntar duda sobre esto ¿Por qué tantas id's? ¿el for de label no actúa como id? ¿el valor del atributo list qué indica?
+    
+<label for="browser">Choose your browser from the list:</label>
+<input list="browsers" name="browser" id="browser">
+
+<datalist id="browsers">
+  <option value="Edge">
+  <option value="Firefox">
+  <option value="Chrome">
+  <option value="Opera">
+  <option value="Safari">
+</datalist>    
+
+
+  
+  
+  
+
 </body>
 </html>
